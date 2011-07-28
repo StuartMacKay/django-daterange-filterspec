@@ -1,0 +1,17 @@
+#changelist-filter-extra {
+    background-color: #eee;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+#changelist-filter-extra h3 {
+    font-size: 12px;
+}
+
+#changelist-filter-extra li {
+    display: inline;
+    margin-right: 25px;
+}
+
+#changelist-filter-extra li a img {
+    vertical-align: middle;
+}

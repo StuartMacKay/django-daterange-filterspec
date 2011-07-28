@@ -1,0 +1,8 @@
+*~
+*.pyc
+*.pyo
+*.sqlite
+
+env
+media
+
