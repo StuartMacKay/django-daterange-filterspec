@@ -16,7 +16,9 @@ Usage
 2. Edit your model to specify which fields will use the date range filter by
    adding an attribute 'date_range_filter' and set it to any suitable value:
 
-   date_added.date_range_filter = True
+   ::
+
+       date_added.date_range_filter = True
 
    The test to determine whether to display the date range or the regular
    date filterspec is performed by testing for the presence of the attribute
@@ -25,27 +27,35 @@ Usage
    The first field to use to the date range filterspec must also set an
    attribute to load the javascript and stylesheet for the calendar widget:
 
-   date_added.show_media = True
+   ::
+
+       date_added.show_media = True
 
    This ensures that the javascript used to display the calendar widget next
    to each date field is only executed once.
 
 3. Edit the model admin to specify which fields will be filtered:
 
-   list_filter = ['date_added', 'date_modified']
+   ::
+
+       list_filter = ['date_added', 'date_modified']
 
    Then register the daterange filterspec:
 
-   FilterSpec.filter_specs.insert(0,
-       (lambda f: hasattr(f, 'date_range_filter'), DateRangeFilterSpec))
+   ::
+
+       FilterSpec.filter_specs.insert(0,
+           (lambda f: hasattr(f, 'date_range_filter'), DateRangeFilterSpec))
 
    Registration could be performed in the filterspecs.py file but this ensures
    that the import is not flagged as unused.
 
 4. Add the templates to your project:
 
-   admin/change_list.html
-   admin/daterange/date_range_form.html
+   ::
+
+       admin/change_list.html
+       admin/daterange/date_range_form.html
 
    If you have not already done so, in your settings file, set the directory
    where templates will be loaded from so that the the local templates are
@@ -53,7 +63,9 @@ Usage
 
 5. Add the stylesheet to your project.
 
-   static/css/admin.css
+   ::
+
+       static/css/admin.css
 
    This file is references on line 7 of the change_list.html template so be
    sure to update this if you move the file somewhere else or simply add the
@@ -76,6 +88,8 @@ a link to (or copy) the media files (images, stylesheets and javascript)
 from the django admin.
 
 To start the project run the following commands:
+
+::
 
     python manage.py syncdb
     python manage.py loaddata daterange
