@@ -1,8 +1,24 @@
+# Python
+__pycache__/
+*.py[co]
+*.egg*
+
+# Editor temp files
 *~
-*.pyc
-*.pyo
-*.sqlite
 
-env
-media
+# Ignore dot files except those required for the project
+.*
+!.gitignore
+!.gitkeep
 
+# Project artefacts
+build
+dist
+reports
+venv
+
+# Django runtime files
+db.sqlite3
+
+# Any local makefiles
+*.mk

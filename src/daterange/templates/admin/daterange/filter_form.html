@@ -1,0 +1,32 @@
+{% load i18n static %}
+
+<div class="date-range-filter">
+  <h3>{% blocktrans %}By {{ title }}{% endblocktrans %}</h3>
+  <form method="GET" action="">
+    {% csrf_token %}
+
+    {{ spec.form.non_field_errors }}
+
+    {% for hidden_field in spec.form.hidden_fields %}
+      {{ hidden_field.errors }}
+      {{ hidden_field }}
+    {% endfor %}
+
+    {% for field in spec.form.visible_fields %}
+      <div class="field{% if field.errors %} error{% endif %}">
+          <div>{{ field.label_tag }}</div>
+          <div>
+            {{ field }}
+            {{ field.help_text }}
+            {{ field.errors }}
+          </div>
+      </div>
+    {% endfor %}
+
+    <div class="controls">
+      <input type="submit" value="{% trans 'go' %}">
+      <a class="button" href="?{{ spec.other_query_string }}">{% trans 'clear' %}</a>
+    </div>
+
+  </form>
+</div>

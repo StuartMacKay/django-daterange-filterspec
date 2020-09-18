@@ -1,0 +1,50 @@
+.calendarbox.module {
+    z-index: 2000;
+}
+
+.date-range-filter h3 {
+    font-size: 12px;
+}
+
+.date-range-filter form {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.date-range-filter form div.field br {
+    display: none;
+}
+
+.date-range-filter label {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.date-range-filter form div.field.error input {
+    background-color: #fff2f2;
+}
+
+#changelist-filter .date-range-filter .errorlist {
+    margin: 0;
+    padding: 0 15px 0 0;
+    background: inherit;
+    border: none;
+}
+
+#changelist-filter .date-range-filter a {
+    display: inline;
+}
+
+#changelist-filter .date-range-filter div.controls {
+    margin-top: 8px;
+}
+
+#changelist-filter .date-range-filter a.button {
+    margin-left: 5px;
+    padding: 10px 15px;
+    color: white;
+}
+
+#changelist-filter .date-range-filter span.timezonewarning {
+    display: none;
+}

@@ -1,0 +1,17 @@
+{% extends "admin/change_list.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  {# Add the existing Django stylesheet for the Calendar widget #}
+  <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}">
+  {# Add the styling for the date range form #}
+  <link rel="stylesheet" href="{% static 'css/admin/daterange.css' %}"/>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+{# Add the existing Django shortcuts and calendar widget #}
+<script type="text/javascript" src="{% static 'admin/js/calendar.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/admin/DateRangeShortcuts.js' %}"></script>
+{% endblock %}
