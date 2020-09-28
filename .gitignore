@@ -11,6 +11,7 @@ __pycache__/
 !.gitignore
 !.gitkeep
 !.readthedocs.yml
+!.travis.yml
 
 # Project artefacts
 build
