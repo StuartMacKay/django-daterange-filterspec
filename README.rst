@@ -1,6 +1,9 @@
 Django DateRange Filterspec
 ===========================
 
+.. image:: https://travis-ci.com/StuartMacKay/django-daterange-filterspec.svg?branch=master
+    :target: https://travis-ci.com/StuartMacKay/django-daterange-filterspec
+    
 Adds a form with AdminDateWidgets that can be used to select a range of
 dates for filtering the list of records displayed in an admin Changelist.
 
