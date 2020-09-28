@@ -10,6 +10,7 @@ __pycache__/
 .*
 !.gitignore
 !.gitkeep
+!.readthedocs.yml
 
 # Project artefacts
 build
