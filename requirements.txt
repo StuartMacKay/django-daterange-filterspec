@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
--e file:///home/stuart/Development/django-daterange-filterspec  # via -r requirements.in
+-e .                      # via -r requirements.in
 alabaster==0.7.12         # via sphinx
 appdirs==1.4.4            # via black, virtualenv
 asgiref==3.2.10           # via django

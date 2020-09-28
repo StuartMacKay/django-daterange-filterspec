@@ -4,6 +4,8 @@ Changelog
 Latest
 ------
 
+* Removed hard-coded path in requirements.txt created by pip-compile.
+
 v2.0.0 - 2020-09-18
 -------------------
 
