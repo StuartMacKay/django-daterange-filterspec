@@ -5,6 +5,7 @@ Latest
 ------
 
 * Removed hard-coded path in requirements.txt created by pip-compile.
+* Split requirements into separate files for docs, tests and development.
 
 v2.0.0 - 2020-09-18
 -------------------
