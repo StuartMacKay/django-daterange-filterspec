@@ -23,7 +23,7 @@ copyright = "2020, Stuart MacKay"
 author = "Stuart MacKay"
 
 version = "2.0"
-release = "2.0.1"
+release = "2.0.2"
 
 
 # -- General configuration ---------------------------------------------------

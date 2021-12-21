@@ -4,6 +4,9 @@ Changelog
 Latest
 ------
 
+2.0.2 (2021-12-21)
+------------------
+
 * Fix docs version and release numbers mangled by bump2version.
 
 2.0.1 (2021-12-21)

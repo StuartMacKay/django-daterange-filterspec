@@ -19,7 +19,7 @@ def read(filename):
 
 setup(
     name="django-daterange-filterspec",
-    version="2.0.1",
+    version="2.0.2",
     description="A DateRange Filter for Django Admin Changelists",
     long_description=read("README.rst"),
     long_description_content_type="text/x-rst",
