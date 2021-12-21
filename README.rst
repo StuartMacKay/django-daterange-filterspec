@@ -1,9 +1,6 @@
 Django DateRange Filterspec
 ===========================
 
-.. image:: https://travis-ci.com/StuartMacKay/django-daterange-filterspec.svg?branch=master
-    :target: https://travis-ci.com/StuartMacKay/django-daterange-filterspec
-    
 Adds a form with AdminDateWidgets that can be used to select a range of
 dates for filtering the list of records displayed in an admin Changelist.
 
@@ -17,16 +14,19 @@ Install the package from PyPI::
     pip install django-daterange-filterspec
 
 The package includes a template, which loads Django's calendar widget
-and date shortcuts. Your templates can either this this template as a
-parent::
+and date shortcuts. Add the package to the INSTALLED_APPS setting so the
+template loader can find it::
 
-    {% extends "admin/daterange/change_list.html" %}
+    INSTALLED_APPS = (
+        ...
+        "daterange.apps.DateRangeFilterConfig",
+        ...
+    )
 
-or, copy the ``extrastyle`` and ``extrahead`` blocks from this template
-to your own.
-
-In your ModelAdmin, for each filter you want to filter on create a tuple
-with the name of the field and the ``DateRangeFilter`` filter class::
+In your ModelAdmin, set the template used for the changelist to the one
+provided by the package. Then, for each field you want to filter on
+create a tuple with the name of the field and the ``DateRangeFilter``
+filter class::
 
     from django.contrib import admin
 
@@ -41,6 +41,8 @@ with the name of the field and the ``DateRangeFilter`` filter class::
         list_display = ["title", "slug", "published"]
         list_filter = [("published", DateRangeFilter)]
         ordering = ["-created"]
+
+        change_list_template = "admin/daterange/change_list.html"
 
 Now, go forth and filter!
 
