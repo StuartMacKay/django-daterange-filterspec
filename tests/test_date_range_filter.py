@@ -16,7 +16,6 @@ class DateRangeFilterTestCase(TestCase):
     @classmethod
     def setUpTestData(cls):
         cls.model = Article
-        cls.model_admin = ArticleAdmin(Article, site)
         cls.user = User.objects.create_user(username="user", password="password")
         cls.objects = [
             Article.objects.create(
@@ -44,6 +43,10 @@ class DateRangeFilterTestCase(TestCase):
                 published=None,
             ),
         ]
+
+    def setUp(self) -> None:
+        super().setUp()
+        self.model_admin = ArticleAdmin(Article, site)
 
     def get_request(self, path="/", data=None):
         request_factory = RequestFactory()

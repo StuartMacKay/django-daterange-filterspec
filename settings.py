@@ -5,6 +5,7 @@ MVS (Minimal Viable Settings) for running a basic site.
 import os
 
 DEBUG = True
+USE_TZ = False
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
