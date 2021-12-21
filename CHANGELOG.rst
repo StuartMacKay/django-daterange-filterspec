@@ -4,6 +4,10 @@ Changelog
 Latest
 ------
 
+* Updated installation instructions to simply usage.
+* Replaced travis with github actions for testing.
+* Updated the list of supported python and Django versions.
+* Freshened dependencies to correct vulnerabilities.
 * Removed hard-coded path in requirements.txt created by pip-compile.
 * Split requirements into separate files for docs, tests and development.
 * Added config file for Read the Docs.
