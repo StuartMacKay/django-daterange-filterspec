@@ -4,6 +4,9 @@ Changelog
 Latest
 ------
 
+2.0.1 (2021-12-21)
+------------------
+
 * Updated installation instructions to simply usage.
 * Replaced travis with github actions for testing.
 * Updated the list of supported python and Django versions.

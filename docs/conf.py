@@ -22,8 +22,8 @@ project = "Django DateRange Filterspec"
 copyright = "2020, Stuart MacKay"
 author = "Stuart MacKay"
 
-version = "2.0"
-release = "2.0.0"
+version = "version = "2.0""
+release = "version = "2.0".1"
 
 
 # -- General configuration ---------------------------------------------------
