@@ -4,6 +4,9 @@ Changelog
 Latest
 ------
 
+2.0.3 (2022-02-07)
+------------------
+
 * Update css styles for setting filter title and shortcut links.
 
 2.0.2 (2021-12-21)
