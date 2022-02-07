@@ -2,10 +2,6 @@
     z-index: 2000;
 }
 
-.date-range-filter h3 {
-    font-size: 12px;
-}
-
 .date-range-filter form {
     padding-left: 15px;
     margin-bottom: 10px;
@@ -43,6 +39,10 @@
     margin-left: 5px;
     padding: 10px 15px;
     color: white;
+}
+
+#changelist-filter .date-range-filter span.datetimeshortcuts {
+    font-size: 0.8rem;
 }
 
 #changelist-filter .date-range-filter span.timezonewarning {
