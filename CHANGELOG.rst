@@ -4,6 +4,9 @@ Changelog
 Latest
 ------
 
+2.0.4 (2022-02-17)
+------------------
+
 * Document using media files instead of the custom changelist template.
 * Update the supported django versions and tidy up the manifest.
 
