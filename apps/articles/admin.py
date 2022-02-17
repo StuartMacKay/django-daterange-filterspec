@@ -12,3 +12,10 @@ class ArticleAdmin(admin.ModelAdmin):
     list_filter = [("published", DateRangeFilter)]
     ordering = ["-created"]
     change_list_template = "admin/daterange/change_list.html"
+
+    # You can avoid using the datarange changelist template
+    # by including the css and javascript files directly.
+    #
+    # class Media:
+    #     css = ("admin/css/forms.css", "css/admin/daterange.css")
+    #     js = ("admin/js/calendar.js", "js/admin/DateRangeShortcuts.js")

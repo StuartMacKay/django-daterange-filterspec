@@ -44,6 +44,20 @@ filter class::
 
         change_list_template = "admin/daterange/change_list.html"
 
+If you're already using a customised changelist template, you can add the necessary
+css and javascript files to the Media class for the ModelAdmin::
+
+    @admin.register(Article)
+    class ArticleAdmin(admin.ModelAdmin):
+
+        ...
+
+        class Media:
+            css = {"all": ("admin/css/forms.css", "css/admin/daterange.css")}
+            js = ("admin/js/calendar.js", "js/admin/DateRangeShortcuts.js")
+
+
+
 Now, go forth and filter!
 
 Project

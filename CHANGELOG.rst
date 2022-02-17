@@ -4,6 +4,8 @@ Changelog
 Latest
 ------
 
+* Document using media files instead of the custom changelist template.
+
 2.0.3 (2022-02-07)
 ------------------
 
