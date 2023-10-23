@@ -39,7 +39,3 @@ jobs:
       - name: Tox tests
         run: |
           tox
-
-      - name: Tox doc tests
-        run: |
-          tox -e docs

@@ -1,4 +1,3 @@
--r docs.in
 -r tests.in
 
 # Install the app and dependencies for development. It is done this way
