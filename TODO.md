@@ -9,15 +9,12 @@ discarded.
 
 Here is what is planned, roughly in the order it will be implemented:
 
-### Upgrade the layout so it follows django-app-template
+### Freshen Python and Django versions
 
-Status: In project
+Status: Pending
 
-Freshen the project structure, so it matches the django-app-template where 
-needed. For example move the demo code from apps into demo.
-
-Leave out the Docker related files - an SQLite database is all that's needed
-to demonstrate how the filter works.
+Freshen the python and Django versions supported. Remove unmaintained versions.
+For Django focus on LTS releases.
 
 ## Ideas
 
@@ -31,3 +28,8 @@ the css and js files needed to display the daterange filter. That makes it a
 little more awkward to use, particularly if you use apps like django-suit to 
 restyle the admin. Double check simplifying adding the css and js in a Media
 class is enough to inject the elements need to style the filter correctly.
+
+### Add fixtures for Articles
+
+To simplify running the demo site, what about adding a fixtures file containing
+Articles with different dates. 
