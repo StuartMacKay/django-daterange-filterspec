@@ -8,15 +8,20 @@ __pycache__/
 
 # Ignore dot files except those required for the project
 .*
+!.editorconfig
+!.envrc
+!.env.example
+!.flake8
+!.gitattributes
+!.github
 !.gitignore
 !.gitkeep
 !.readthedocs.yml
-!.github/
 
 # Project artefacts
 build
+coverage
 dist
-reports
 venv
 
 # Django runtime files

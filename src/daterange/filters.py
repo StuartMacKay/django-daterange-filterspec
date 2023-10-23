@@ -6,7 +6,6 @@ from daterange.forms import DateRangeForm
 
 
 class FormFilter(FieldListFilter):
-
     initial = {}
     form_class = None
 
@@ -52,7 +51,6 @@ class FormFilter(FieldListFilter):
 
 
 class DateRangeFilter(FormFilter):
-
     template = "admin/daterange/filter_form.html"
     form_class = DateRangeForm
 

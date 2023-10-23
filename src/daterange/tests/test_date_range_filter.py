@@ -7,8 +7,8 @@ from django.utils import timezone
 
 import pytest
 
-from apps.articles.admin import ArticleAdmin
-from apps.articles.models import Article
+from demo.admin import ArticleAdmin
+from demo.models import Article
 
 
 @pytest.mark.django_db

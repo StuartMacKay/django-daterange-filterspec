@@ -1,0 +1,4 @@
+#https://git-scm.com/docs/gitattributes
+
+# end of line normalization
+* text=auto

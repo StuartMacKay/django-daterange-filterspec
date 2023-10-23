@@ -20,7 +20,7 @@ INSTALLED_APPS = (
     "django.contrib.sites",
     "django.contrib.staticfiles",
     "daterange.apps.DateRangeFilterConfig",
-    "apps.articles.apps.ArticlesConfig",
+    "demo.apps.Config",
 )
 
 MIDDLEWARE = [
@@ -31,7 +31,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
 ]
 
-ROOT_URLCONF = "urls"
+ROOT_URLCONF = "demo.urls"
 
 STATIC_URL = "/static/"
 
@@ -56,6 +56,8 @@ DATABASES = {
         "NAME": os.path.join(ROOT_DIR, "db.sqlite3"),
     }
 }
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 INTERNAL_IPS = [
     "127.0.0.1",

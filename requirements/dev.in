@@ -2,8 +2,13 @@
 -r tests.in
 
 # Install the app and dependencies for development. It is done this way
-# rather than using setup.py develop directly as that only makes Django
+# rather than using "setup.py develop" directly as that only makes Django
 # visible to the app and not generally.
+
+# CRITICALLY IMPORTANT: Every time you recompile dev.in with pip-compile
+# you MUST edit dev.txt to restore the entry for the feeds package to be
+# a relative path, i.e. change the entry "-e file:///<path to>/django-app-template"
+# to "-e ." otherwise you won't be able to build the docker containers.
 
 -e .
 
@@ -12,5 +17,7 @@
 # https://github.com/c4urself/bump2version/issues/86
 
 bump2version
+django-stubs
+pip-upgrader
 
 twine

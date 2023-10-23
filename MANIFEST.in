@@ -10,9 +10,7 @@ include CHANGELOG.rst
 exclude setup.cfg
 exclude pyproject.toml
 
-recursive-include src/daterange/locale *
-recursive-include src/daterange/templates *
-recursive-include src/daterange/static *
+recursive-include src/daterange/ *
 
 recursive-exclude src/daterange/tests *
 

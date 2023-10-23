@@ -5,7 +5,6 @@ setup.py
 setup() is configured with the project metadata so setup.cfg is used
 primarily for options for the various tools used.
 
-
 """
 import os
 
@@ -46,7 +45,6 @@ setup(
         "Natural Language :: English",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",

@@ -4,7 +4,6 @@ from django.utils.translation import gettext_lazy as _
 
 
 class DateRangeForm(forms.Form):
-
     start = forms.DateField(
         required=False,
         label=_("From date"),
